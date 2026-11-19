@@ -1,2 +1,3 @@
 step,images,minutes,note
+gold_manual,4,60,"Actual manual gold-labeling time reported by the student in chat; 1 hour total for 4 gold images."
 batch_review,24,74,"Recorded active review time reported by the student in chat; first pass on CVAT Task 11 / Job 11; excludes later export and scoring."
