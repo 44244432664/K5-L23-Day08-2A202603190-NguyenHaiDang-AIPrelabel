@@ -1,0 +1,50 @@
+{
+  "image": "img_036.jpg",
+  "annotation_id": 46,
+  "original_export": "submission/qc/gold_manual_before_revision.json",
+  "original_sha256": "f648594115c8ef818427592bc49b8e32d0af1a24df2d0af38954eaaa2a2faf2e",
+  "revised_sha256": "ee27a7cc4207cf3ae751ab1d84670f72464e5fd80571961c3efd68e908fa25e9",
+  "before": {
+    "id": 46,
+    "image_id": 4,
+    "category_id": 4,
+    "segmentation": [],
+    "area": 221.52000000000024,
+    "bbox": [
+      677.53,
+      312.55,
+      14.2,
+      15.6
+    ],
+    "iscrowd": 0,
+    "attributes": {
+      "conf": "",
+      "can_review": false,
+      "occluded": false,
+      "rotation": 0.0
+    }
+  },
+  "after": {
+    "id": 46,
+    "image_id": 4,
+    "category_id": 8,
+    "segmentation": [],
+    "area": 221.52000000000024,
+    "bbox": [
+      677.53,
+      312.55,
+      14.2,
+      15.6
+    ],
+    "iscrowd": 0,
+    "attributes": {
+      "conf": "",
+      "can_review": false,
+      "occluded": false,
+      "rotation": 0.0
+    }
+  },
+  "reason": "Explicit user request after AI predictions and threshold results were available.",
+  "contract_note": "A single sub-20px object is normally omitted under v1.0; using ignore_region here is a user-requested exception, not proof of a qualifying indistinct group.",
+  "unchanged_fields": "All fields except this annotation's category_id are semantically unchanged."
+}

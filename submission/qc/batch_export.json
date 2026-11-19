@@ -1,0 +1,298 @@
+{
+  "task_id": 11,
+  "job_id": 11,
+  "project_id": 2,
+  "user_reported_review_complete": true,
+  "export_format": "COCO 1.0",
+  "images_excluded": true,
+  "downloaded_archive": "work/part4_export/batch_reviewed_original_cvat.zip",
+  "archive_member": "annotations/instances_default.json",
+  "archive_sha256": "ba8f4b47a94bb4a3b5fe7251a5e68a5ecaf370173161a9799a41fba70072f8bf",
+  "reviewed_export": "submission/labels/batch_reviewed.json",
+  "reviewed_export_sha256": "fa3153e84efced19030bb39d1e849238c2257142251f47dae48f0904ae8d065d",
+  "images": 24,
+  "annotations": 655,
+  "preserved_at_utc": "2026-11-19T04:12:21.859734+00:00",
+  "trap_key_read_by_assistant_before_preserving_export": false,
+  "baseline_sha256": {
+    "submission/prelabel/pre_traps.coco.json": "64d192724b727c68f26b95dacd417012170d7ce5af4d7f7300f3e50dec7db995",
+    "submission/prelabel/pre_traps_import.coco.json": "c79f313742b0a0a27d6543a79f655cfe4ac3890c113c9fb824380b01d4908f0d"
+  },
+  "active_review_minutes": 74,
+  "note": "Completion is user-reported. Export and measurements do not independently verify checklist adherence or active work time. Trap key has not been read by the assistant before this export was preserved.",
+  "scored_after_export_at_utc": "2026-11-19T04:15:29.579425+00:00",
+  "active_review_time_source": "User-reported recorded active review time in chat; not inferred from task timestamps.",
+  "first_pass_snapshot": "submission/qc/batch_reviewed_first_pass.json",
+  "first_pass_stats": [
+    "submission/qc/review_stats_first_pass.json",
+    "submission/qc/review_stats_first_pass.md"
+  ],
+  "final_categories": {
+    "three_wheeler": 26,
+    "truck": 5,
+    "bicycle": 10,
+    "person": 349,
+    "motorbike": 206,
+    "car": 53,
+    "bus": 2,
+    "ignore_region": 4
+  },
+  "small_box_warnings": [
+    {
+      "image": "img_014.jpg",
+      "annotation_id": 166,
+      "class": "person",
+      "height_px": 19.3
+    },
+    {
+      "image": "img_017.jpg",
+      "annotation_id": 188,
+      "class": "person",
+      "height_px": 10.71
+    },
+    {
+      "image": "img_018.jpg",
+      "annotation_id": 194,
+      "class": "motorbike",
+      "height_px": 13.01
+    },
+    {
+      "image": "img_018.jpg",
+      "annotation_id": 195,
+      "class": "motorbike",
+      "height_px": 15.66
+    },
+    {
+      "image": "img_018.jpg",
+      "annotation_id": 196,
+      "class": "motorbike",
+      "height_px": 17.7
+    },
+    {
+      "image": "img_018.jpg",
+      "annotation_id": 203,
+      "class": "motorbike",
+      "height_px": 14.27
+    },
+    {
+      "image": "img_018.jpg",
+      "annotation_id": 208,
+      "class": "person",
+      "height_px": 16.2
+    },
+    {
+      "image": "img_018.jpg",
+      "annotation_id": 212,
+      "class": "motorbike",
+      "height_px": 16.86
+    },
+    {
+      "image": "img_018.jpg",
+      "annotation_id": 219,
+      "class": "motorbike",
+      "height_px": 18.26
+    },
+    {
+      "image": "img_018.jpg",
+      "annotation_id": 224,
+      "class": "bicycle",
+      "height_px": 16.64
+    },
+    {
+      "image": "img_023.jpg",
+      "annotation_id": 326,
+      "class": "car",
+      "height_px": 15.11
+    },
+    {
+      "image": "img_024.jpg",
+      "annotation_id": 343,
+      "class": "person",
+      "height_px": 18.94
+    },
+    {
+      "image": "img_025.jpg",
+      "annotation_id": 401,
+      "class": "person",
+      "height_px": 18.19
+    },
+    {
+      "image": "img_027.jpg",
+      "annotation_id": 444,
+      "class": "car",
+      "height_px": 17.22
+    },
+    {
+      "image": "img_027.jpg",
+      "annotation_id": 453,
+      "class": "motorbike",
+      "height_px": 18.6
+    },
+    {
+      "image": "img_027.jpg",
+      "annotation_id": 456,
+      "class": "person",
+      "height_px": 17.64
+    },
+    {
+      "image": "img_027.jpg",
+      "annotation_id": 459,
+      "class": "motorbike",
+      "height_px": 16.92
+    },
+    {
+      "image": "img_033.jpg",
+      "annotation_id": 574,
+      "class": "motorbike",
+      "height_px": 18.64
+    },
+    {
+      "image": "img_033.jpg",
+      "annotation_id": 583,
+      "class": "motorbike",
+      "height_px": 19.14
+    },
+    {
+      "image": "img_034.jpg",
+      "annotation_id": 589,
+      "class": "motorbike",
+      "height_px": 18.31
+    },
+    {
+      "image": "img_034.jpg",
+      "annotation_id": 594,
+      "class": "motorbike",
+      "height_px": 17.4
+    }
+  ],
+  "trap_catch": {
+    "caught": 6,
+    "total": 12,
+    "required_minimum": 10
+  },
+  "part4_quality_status": "Rework required: first-pass trap catch below 80%; small boxes require contract review. No labels changed after scoring.",
+  "class_profile_examples": [
+    {
+      "image": "img_003.jpg",
+      "unmatched_pre_by_class": {
+        "three_wheeler": 5,
+        "motorbike": 1
+      },
+      "unmatched_final_by_class": {
+        "truck": 2,
+        "bicycle": 1
+      }
+    },
+    {
+      "image": "img_005.jpg",
+      "unmatched_pre_by_class": {
+        "three_wheeler": 1,
+        "person": 4,
+        "motorbike": 5
+      },
+      "unmatched_final_by_class": {
+        "person": 1,
+        "bicycle": 1
+      }
+    },
+    {
+      "image": "img_009.jpg",
+      "unmatched_pre_by_class": {
+        "three_wheeler": 2
+      },
+      "unmatched_final_by_class": {
+        "motorbike": 1
+      }
+    },
+    {
+      "image": "img_010.jpg",
+      "unmatched_pre_by_class": {
+        "three_wheeler": 1,
+        "bicycle": 1
+      },
+      "unmatched_final_by_class": {
+        "three_wheeler": 1
+      }
+    },
+    {
+      "image": "img_013.jpg",
+      "unmatched_pre_by_class": {
+        "three_wheeler": 2,
+        "person": 1,
+        "truck": 2,
+        "motorbike": 1
+      },
+      "unmatched_final_by_class": {
+        "car": 2
+      }
+    },
+    {
+      "image": "img_014.jpg",
+      "unmatched_pre_by_class": {
+        "three_wheeler": 3,
+        "person": 2,
+        "motorbike": 1
+      },
+      "unmatched_final_by_class": {}
+    },
+    {
+      "image": "img_017.jpg",
+      "unmatched_pre_by_class": {
+        "three_wheeler": 1
+      },
+      "unmatched_final_by_class": {
+        "three_wheeler": 1
+      }
+    },
+    {
+      "image": "img_022.jpg",
+      "unmatched_pre_by_class": {
+        "three_wheeler": 1,
+        "person": 9
+      },
+      "unmatched_final_by_class": {}
+    },
+    {
+      "image": "img_023.jpg",
+      "unmatched_pre_by_class": {
+        "three_wheeler": 2
+      },
+      "unmatched_final_by_class": {}
+    },
+    {
+      "image": "img_024.jpg",
+      "unmatched_pre_by_class": {
+        "bus": 1,
+        "car": 5,
+        "truck": 3,
+        "person": 6,
+        "motorbike": 1
+      },
+      "unmatched_final_by_class": {
+        "car": 3,
+        "person": 2
+      }
+    },
+    {
+      "image": "img_034.jpg",
+      "unmatched_pre_by_class": {
+        "three_wheeler": 1,
+        "person": 3,
+        "motorbike": 2
+      },
+      "unmatched_final_by_class": {
+        "truck": 1,
+        "motorbike": 1
+      }
+    }
+  ],
+  "live_cvat_verification": {
+    "images": 24,
+    "rectangles": 655,
+    "all_images_classes_and_rectangles_matched": true,
+    "maximum_endpoint_difference_px": 0.004943171984052697,
+    "tolerance_px": 0.02,
+    "note": "COCO export rounds bbox values; exact 0.001 px hashes differed. One-to-one geometry comparison within 0.02 px matches all shapes.",
+    "local_verification_snapshot": "work/part4_export/batch_reviewed_live_verification.json"
+  }
+}

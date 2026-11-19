@@ -1,0 +1,1823 @@
+{
+  "producer": "Assistant-generated technical comparison requested by the student",
+  "threshold_confirmation": "Student explicitly accepted the previously proposed thresholds",
+  "thresholds": {
+    "person": 0.15,
+    "bicycle": 0.3,
+    "motorbike": 0.1,
+    "car": 0.3,
+    "bus": 0.3,
+    "truck": 0.3,
+    "three_wheeler": 0.15
+  },
+  "gold": "submission/labels/gold_manual.json",
+  "gold_revision": "submission/qc/gold_revision.json",
+  "matching": "Same class; bbox IoU >= 0.5; predictions covered by gold ignore regions excluded",
+  "scope": "Two raw model outputs before cross-model merging; not reviewed-batch quality",
+  "caveat": "Unmatched predictions/gold are discrepancies against the reference, not proof every unmatched prediction is a visually false object.",
+  "images": {
+    "img_001.jpg": {
+      "yolo26": {
+        "tp": 18,
+        "fp": 18,
+        "fn": 2,
+        "matches": [
+          {
+            "prediction": {
+              "id": 3,
+              "class": "motorbike",
+              "box_xyxy": [
+                947.54,
+                370.35,
+                1023.75,
+                472.02000000000004
+              ],
+              "score": 0.8295
+            },
+            "gold": {
+              "id": 5,
+              "class": "motorbike",
+              "box_xyxy": [
+                949.64,
+                361.31,
+                1024.0,
+                472.02
+              ],
+              "score": null
+            },
+            "iou": 0.8921206005856608
+          },
+          {
+            "prediction": {
+              "id": 17,
+              "class": "person",
+              "box_xyxy": [
+                671.08,
+                389.6,
+                684.19,
+                429.05
+              ],
+              "score": 0.4679
+            },
+            "gold": {
+              "id": 12,
+              "class": "person",
+              "box_xyxy": [
+                671.76,
+                389.34,
+                683.58,
+                429.30999999999995
+              ],
+              "score": null
+            },
+            "iou": 0.8910128275167088
+          },
+          {
+            "prediction": {
+              "id": 6,
+              "class": "person",
+              "box_xyxy": [
+                639.07,
+                382.15,
+                666.49,
+                437.29999999999995
+              ],
+              "score": 0.7359
+            },
+            "gold": {
+              "id": 11,
+              "class": "person",
+              "box_xyxy": [
+                635.81,
+                382.64,
+                666.4699999999999,
+                438.87
+              ],
+              "score": null
+            },
+            "iou": 0.8614603695236766
+          },
+          {
+            "prediction": {
+              "id": 25,
+              "class": "person",
+              "box_xyxy": [
+                904.88,
+                387.58,
+                916.88,
+                420.82
+              ],
+              "score": 0.314
+            },
+            "gold": {
+              "id": 18,
+              "class": "person",
+              "box_xyxy": [
+                904.29,
+                388.97,
+                917.39,
+                421.77000000000004
+              ],
+              "score": null
+            },
+            "iou": 0.8562595214624928
+          },
+          {
+            "prediction": {
+              "id": 4,
+              "class": "person",
+              "box_xyxy": [
+                554.91,
+                366.36,
+                605.29,
+                450.69
+              ],
+              "score": 0.7894
+            },
+            "gold": {
+              "id": 10,
+              "class": "person",
+              "box_xyxy": [
+                551.77,
+                366.43,
+                604.79,
+                458.32
+              ],
+              "score": null
+            },
+            "iou": 0.8546514072818797
+          },
+          {
+            "prediction": {
+              "id": 30,
+              "class": "person",
+              "box_xyxy": [
+                913.64,
+                387.75,
+                924.0699999999999,
+                415.58
+              ],
+              "score": 0.2603
+            },
+            "gold": {
+              "id": 20,
+              "class": "person",
+              "box_xyxy": [
+                913.39,
+                389.87,
+                923.6899999999999,
+                414.97
+              ],
+              "score": null
+            },
+            "iou": 0.8506555060178693
+          },
+          {
+            "prediction": {
+              "id": 10,
+              "class": "motorbike",
+              "box_xyxy": [
+                121.38,
+                406.36,
+                179.09,
+                448.09000000000003
+              ],
+              "score": 0.6088
+            },
+            "gold": {
+              "id": 2,
+              "class": "motorbike",
+              "box_xyxy": [
+                127.56,
+                404.05,
+                177.75,
+                447.84000000000003
+              ],
+              "score": null
+            },
+            "iou": 0.8247761686461631
+          },
+          {
+            "prediction": {
+              "id": 12,
+              "class": "person",
+              "box_xyxy": [
+                614.33,
+                390.14,
+                625.33,
+                410.71999999999997
+              ],
+              "score": 0.5995
+            },
+            "gold": {
+              "id": 13,
+              "class": "person",
+              "box_xyxy": [
+                614.94,
+                390.24,
+                624.44,
+                412.11
+              ],
+              "score": null
+            },
+            "iou": 0.8120708725504495
+          },
+          {
+            "prediction": {
+              "id": 9,
+              "class": "person",
+              "box_xyxy": [
+                706.68,
+                390.66,
+                720.03,
+                424.95000000000005
+              ],
+              "score": 0.6596
+            },
+            "gold": {
+              "id": 14,
+              "class": "person",
+              "box_xyxy": [
+                707.74,
+                393.43,
+                719.38,
+                424.89
+              ],
+              "score": null
+            },
+            "iou": 0.7999501934917279
+          },
+          {
+            "prediction": {
+              "id": 5,
+              "class": "person",
+              "box_xyxy": [
+                863.89,
+                386.34,
+                887.02,
+                433.62
+              ],
+              "score": 0.7467
+            },
+            "gold": {
+              "id": 15,
+              "class": "person",
+              "box_xyxy": [
+                866.15,
+                386.91,
+                888.73,
+                429.74
+              ],
+              "score": null
+            },
+            "iou": 0.7660630889429317
+          },
+          {
+            "prediction": {
+              "id": 21,
+              "class": "motorbike",
+              "box_xyxy": [
+                636.99,
+                404.94,
+                665.0,
+                445.86
+              ],
+              "score": 0.3738
+            },
+            "gold": {
+              "id": 4,
+              "class": "motorbike",
+              "box_xyxy": [
+                635.03,
+                397.94,
+                666.68,
+                446.07
+              ],
+              "score": null
+            },
+            "iou": 0.7524179675306714
+          },
+          {
+            "prediction": {
+              "id": 11,
+              "class": "motorbike",
+              "box_xyxy": [
+                849.49,
+                405.86,
+                865.07,
+                427.61
+              ],
+              "score": 0.6051
+            },
+            "gold": {
+              "id": 9,
+              "class": "motorbike",
+              "box_xyxy": [
+                849.34,
+                400.11,
+                864.44,
+                427.41
+              ],
+              "score": null
+            },
+            "iou": 0.751120540423971
+          },
+          {
+            "prediction": {
+              "id": 2,
+              "class": "motorbike",
+              "box_xyxy": [
+                555.02,
+                399.16,
+                605.92,
+                473.5
+              ],
+              "score": 0.8427
+            },
+            "gold": {
+              "id": 3,
+              "class": "motorbike",
+              "box_xyxy": [
+                550.27,
+                385.83,
+                607.63,
+                473.65999999999997
+              ],
+              "score": null
+            },
+            "iou": 0.751083659618214
+          },
+          {
+            "prediction": {
+              "id": 23,
+              "class": "person",
+              "box_xyxy": [
+                848.75,
+                388.66,
+                864.34,
+                414.01000000000005
+              ],
+              "score": 0.3572
+            },
+            "gold": {
+              "id": 16,
+              "class": "person",
+              "box_xyxy": [
+                849.16,
+                390.12,
+                864.26,
+                420.02
+              ],
+              "score": null
+            },
+            "iou": 0.7423262322322445
+          },
+          {
+            "prediction": {
+              "id": 13,
+              "class": "person",
+              "box_xyxy": [
+                896.68,
+                386.99,
+                906.4399999999999,
+                417.79
+              ],
+              "score": 0.5298
+            },
+            "gold": {
+              "id": 19,
+              "class": "person",
+              "box_xyxy": [
+                897.69,
+                388.67,
+                907.99,
+                416.87
+              ],
+              "score": null
+            },
+            "iou": 0.7166340417869397
+          },
+          {
+            "prediction": {
+              "id": 29,
+              "class": "person",
+              "box_xyxy": [
+                823.27,
+                395.84,
+                834.79,
+                420.41999999999996
+              ],
+              "score": 0.286
+            },
+            "gold": {
+              "id": 17,
+              "class": "person",
+              "box_xyxy": [
+                824.5,
+                392.75,
+                834.3,
+                418.75
+              ],
+              "score": null
+            },
+            "iou": 0.7162947337256205
+          },
+          {
+            "prediction": {
+              "id": 15,
+              "class": "motorbike",
+              "box_xyxy": [
+                867.38,
+                411.03,
+                886.67,
+                437.08
+              ],
+              "score": 0.5175
+            },
+            "gold": {
+              "id": 8,
+              "class": "motorbike",
+              "box_xyxy": [
+                866.75,
+                399.43,
+                888.46,
+                436.98
+              ],
+              "score": null
+            },
+            "iou": 0.6125949118846896
+          },
+          {
+            "prediction": {
+              "id": 8,
+              "class": "motorbike",
+              "box_xyxy": [
+                925.14,
+                380.84,
+                986.02,
+                467.84999999999997
+              ],
+              "score": 0.6785
+            },
+            "gold": {
+              "id": 7,
+              "class": "motorbike",
+              "box_xyxy": [
+                906.22,
+                373.8,
+                1005.2,
+                463.66
+              ],
+              "score": null
+            },
+            "iou": 0.5510814990660623
+          }
+        ],
+        "unmatched_predictions": [
+          {
+            "id": 1,
+            "class": "truck",
+            "box_xyxy": [
+              186.07,
+              332.67,
+              530.5799999999999,
+              514.57
+            ],
+            "score": 0.8757
+          },
+          {
+            "id": 7,
+            "class": "motorbike",
+            "box_xyxy": [
+              905.68,
+              382.89,
+              958.91,
+              463.82
+            ],
+            "score": 0.7068
+          },
+          {
+            "id": 14,
+            "class": "person",
+            "box_xyxy": [
+              256.63,
+              368.41,
+              270.06,
+              385.69000000000005
+            ],
+            "score": 0.5229
+          },
+          {
+            "id": 16,
+            "class": "person",
+            "box_xyxy": [
+              949.98,
+              353.62,
+              986.04,
+              393.88
+            ],
+            "score": 0.5091
+          },
+          {
+            "id": 18,
+            "class": "person",
+            "box_xyxy": [
+              624.59,
+              389.86,
+              637.84,
+              410.03000000000003
+            ],
+            "score": 0.4676
+          },
+          {
+            "id": 19,
+            "class": "bicycle",
+            "box_xyxy": [
+              637.87,
+              404.93,
+              664.89,
+              445.95
+            ],
+            "score": 0.4189
+          },
+          {
+            "id": 20,
+            "class": "person",
+            "box_xyxy": [
+              549.8,
+              385.77,
+              561.5,
+              409.72999999999996
+            ],
+            "score": 0.3744
+          },
+          {
+            "id": 22,
+            "class": "person",
+            "box_xyxy": [
+              221.18,
+              374.97,
+              235.87,
+              392.11
+            ],
+            "score": 0.3719
+          },
+          {
+            "id": 24,
+            "class": "bicycle",
+            "box_xyxy": [
+              665.02,
+              405.5,
+              685.01,
+              437.38
+            ],
+            "score": 0.3326
+          },
+          {
+            "id": 26,
+            "class": "car",
+            "box_xyxy": [
+              0.03,
+              419.05,
+              33.72,
+              443.86
+            ],
+            "score": 0.308
+          },
+          {
+            "id": 28,
+            "class": "person",
+            "box_xyxy": [
+              795.02,
+              394.76,
+              806.68,
+              422.03
+            ],
+            "score": 0.2904
+          },
+          {
+            "id": 32,
+            "class": "person",
+            "box_xyxy": [
+              842.3,
+              395.57,
+              851.81,
+              417.86
+            ],
+            "score": 0.2071
+          },
+          {
+            "id": 34,
+            "class": "motorbike",
+            "box_xyxy": [
+              157.32,
+              415.8,
+              194.07,
+              446.7
+            ],
+            "score": 0.1942
+          },
+          {
+            "id": 36,
+            "class": "motorbike",
+            "box_xyxy": [
+              527.33,
+              410.7,
+              542.23,
+              436.77
+            ],
+            "score": 0.1415
+          },
+          {
+            "id": 37,
+            "class": "motorbike",
+            "box_xyxy": [
+              528.16,
+              408.88,
+              563.4,
+              436.07
+            ],
+            "score": 0.138
+          },
+          {
+            "id": 38,
+            "class": "motorbike",
+            "box_xyxy": [
+              794.65,
+              399.24,
+              806.5699999999999,
+              422.17
+            ],
+            "score": 0.1281
+          },
+          {
+            "id": 41,
+            "class": "motorbike",
+            "box_xyxy": [
+              822.57,
+              398.35,
+              834.08,
+              420.86
+            ],
+            "score": 0.1235
+          },
+          {
+            "id": 43,
+            "class": "motorbike",
+            "box_xyxy": [
+              814.58,
+              404.88,
+              824.5200000000001,
+              419.25
+            ],
+            "score": 0.114
+          }
+        ],
+        "unmatched_gold": [
+          {
+            "id": 1,
+            "class": "car",
+            "box_xyxy": [
+              189.2,
+              333.72,
+              532.96,
+              516.51
+            ],
+            "score": null
+          },
+          {
+            "id": 6,
+            "class": "motorbike",
+            "box_xyxy": [
+              925.58,
+              364.88,
+              1024.0,
+              468.07
+            ],
+            "score": null
+          }
+        ]
+      },
+      "yoloe": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "matches": [],
+        "unmatched_predictions": [],
+        "unmatched_gold": []
+      }
+    },
+    "img_012.jpg": {
+      "yolo26": {
+        "tp": 6,
+        "fp": 7,
+        "fn": 0,
+        "matches": [
+          {
+            "prediction": {
+              "id": 446,
+              "class": "car",
+              "box_xyxy": [
+                261.55,
+                0.0,
+                598.1500000000001,
+                57.12
+              ],
+              "score": 0.9005
+            },
+            "gold": {
+              "id": 28,
+              "class": "car",
+              "box_xyxy": [
+                260.95,
+                0.0,
+                596.91,
+                57.44
+              ],
+              "score": null
+            },
+            "iou": 0.9890229282677107
+          },
+          {
+            "prediction": {
+              "id": 447,
+              "class": "person",
+              "box_xyxy": [
+                456.49,
+                267.95,
+                505.13,
+                477.75
+              ],
+              "score": 0.8819
+            },
+            "gold": {
+              "id": 25,
+              "class": "person",
+              "box_xyxy": [
+                455.89,
+                268.64,
+                505.0,
+                477.63
+              ],
+              "score": null
+            },
+            "iou": 0.9814172436071557
+          },
+          {
+            "prediction": {
+              "id": 443,
+              "class": "car",
+              "box_xyxy": [
+                18.11,
+                167.19,
+                291.68,
+                406.31
+              ],
+              "score": 0.9434
+            },
+            "gold": {
+              "id": 23,
+              "class": "car",
+              "box_xyxy": [
+                19.28,
+                167.07,
+                290.66999999999996,
+                403.24
+              ],
+              "score": null
+            },
+            "iou": 0.9788075655407349
+          },
+          {
+            "prediction": {
+              "id": 444,
+              "class": "car",
+              "box_xyxy": [
+                540.35,
+                375.57,
+                996.07,
+                731.77
+              ],
+              "score": 0.9276
+            },
+            "gold": {
+              "id": 24,
+              "class": "car",
+              "box_xyxy": [
+                538.13,
+                379.56,
+                994.24,
+                727.0
+              ],
+              "score": null
+            },
+            "iou": 0.966895894785254
+          },
+          {
+            "prediction": {
+              "id": 448,
+              "class": "person",
+              "box_xyxy": [
+                748.92,
+                0.9,
+                795.24,
+                147.94
+              ],
+              "score": 0.8774
+            },
+            "gold": {
+              "id": 26,
+              "class": "person",
+              "box_xyxy": [
+                750.55,
+                0.0,
+                794.4,
+                147.86
+              ],
+              "score": null
+            },
+            "iou": 0.9407094035292576
+          },
+          {
+            "prediction": {
+              "id": 445,
+              "class": "person",
+              "box_xyxy": [
+                590.42,
+                0.53,
+                638.89,
+                134.25
+              ],
+              "score": 0.9078
+            },
+            "gold": {
+              "id": 27,
+              "class": "person",
+              "box_xyxy": [
+                589.66,
+                0.0,
+                636.88,
+                135.38
+              ],
+              "score": null
+            },
+            "iou": 0.9326285467508679
+          }
+        ],
+        "unmatched_predictions": [
+          {
+            "id": 449,
+            "class": "car",
+            "box_xyxy": [
+              365.31,
+              167.38,
+              588.6800000000001,
+              446.57
+            ],
+            "score": 0.811
+          },
+          {
+            "id": 450,
+            "class": "person",
+            "box_xyxy": [
+              707.23,
+              290.96,
+              735.0,
+              385.26
+            ],
+            "score": 0.7835
+          },
+          {
+            "id": 451,
+            "class": "car",
+            "box_xyxy": [
+              588.79,
+              177.67,
+              841.05,
+              411.9
+            ],
+            "score": 0.7061
+          },
+          {
+            "id": 452,
+            "class": "car",
+            "box_xyxy": [
+              441.21,
+              79.76,
+              639.75,
+              287.36
+            ],
+            "score": 0.6747
+          },
+          {
+            "id": 453,
+            "class": "car",
+            "box_xyxy": [
+              238.2,
+              56.87,
+              412.64,
+              266.02
+            ],
+            "score": 0.65
+          },
+          {
+            "id": 454,
+            "class": "person",
+            "box_xyxy": [
+              318.95,
+              143.54,
+              332.71,
+              223.47
+            ],
+            "score": 0.5619
+          },
+          {
+            "id": 455,
+            "class": "person",
+            "box_xyxy": [
+              539.74,
+              173.02,
+              563.67,
+              250.94
+            ],
+            "score": 0.474
+          }
+        ],
+        "unmatched_gold": []
+      },
+      "yoloe": {
+        "tp": 4,
+        "fp": 2,
+        "fn": 0,
+        "matches": [
+          {
+            "prediction": {
+              "id": 53,
+              "class": "three_wheeler",
+              "box_xyxy": [
+                593.93,
+                182.03,
+                838.27,
+                410.82
+              ],
+              "score": 0.3043
+            },
+            "gold": {
+              "id": 32,
+              "class": "three_wheeler",
+              "box_xyxy": [
+                590.68,
+                180.21,
+                842.1999999999999,
+                433.09000000000003
+              ],
+              "score": null
+            },
+            "iou": 0.8789103943688303
+          },
+          {
+            "prediction": {
+              "id": 52,
+              "class": "three_wheeler",
+              "box_xyxy": [
+                240.49,
+                59.02,
+                409.12,
+                255.86
+              ],
+              "score": 0.3641
+            },
+            "gold": {
+              "id": 29,
+              "class": "three_wheeler",
+              "box_xyxy": [
+                237.9,
+                57.27,
+                410.13,
+                289.21
+              ],
+              "score": null
+            },
+            "iou": 0.8309286662244714
+          },
+          {
+            "prediction": {
+              "id": 56,
+              "class": "three_wheeler",
+              "box_xyxy": [
+                364.49,
+                171.13,
+                584.61,
+                412.48
+              ],
+              "score": 0.1939
+            },
+            "gold": {
+              "id": 31,
+              "class": "three_wheeler",
+              "box_xyxy": [
+                373.21,
+                169.83,
+                589.5999999999999,
+                447.85
+              ],
+              "score": null
+            },
+            "iou": 0.819419062872942
+          },
+          {
+            "prediction": {
+              "id": 55,
+              "class": "three_wheeler",
+              "box_xyxy": [
+                444.55,
+                82.16,
+                639.32,
+                394.98
+              ],
+              "score": 0.2397
+            },
+            "gold": {
+              "id": 30,
+              "class": "three_wheeler",
+              "box_xyxy": [
+                443.25,
+                80.24,
+                637.14,
+                329.27
+              ],
+              "score": null
+            },
+            "iou": 0.7723106922264705
+          }
+        ],
+        "unmatched_predictions": [
+          {
+            "id": 51,
+            "class": "three_wheeler",
+            "box_xyxy": [
+              908.16,
+              92.89,
+              1024.0,
+              242.06
+            ],
+            "score": 0.4527
+          },
+          {
+            "id": 54,
+            "class": "three_wheeler",
+            "box_xyxy": [
+              448.02,
+              82.24,
+              867.81,
+              396.05
+            ],
+            "score": 0.2652
+          }
+        ],
+        "unmatched_gold": []
+      }
+    },
+    "img_020.jpg": {
+      "yolo26": {
+        "tp": 6,
+        "fp": 6,
+        "fn": 1,
+        "matches": [
+          {
+            "prediction": {
+              "id": 752,
+              "class": "car",
+              "box_xyxy": [
+                995.28,
+                190.19,
+                1023.73,
+                236.29
+              ],
+              "score": 0.894
+            },
+            "gold": {
+              "id": 39,
+              "class": "car",
+              "box_xyxy": [
+                995.21,
+                189.64,
+                1024.0,
+                236.96999999999997
+              ],
+              "score": null
+            },
+            "iou": 0.9625095045928467
+          },
+          {
+            "prediction": {
+              "id": 754,
+              "class": "car",
+              "box_xyxy": [
+                889.56,
+                177.58,
+                981.24,
+                264.13
+              ],
+              "score": 0.8636
+            },
+            "gold": {
+              "id": 38,
+              "class": "car",
+              "box_xyxy": [
+                881.89,
+                178.25,
+                980.45,
+                263.7
+              ],
+              "score": null
+            },
+            "iou": 0.9041064371924846
+          },
+          {
+            "prediction": {
+              "id": 753,
+              "class": "person",
+              "box_xyxy": [
+                445.24,
+                250.3,
+                541.61,
+                398.21000000000004
+              ],
+              "score": 0.8833
+            },
+            "gold": {
+              "id": 41,
+              "class": "person",
+              "box_xyxy": [
+                444.43,
+                249.64,
+                541.9300000000001,
+                415.05999999999995
+              ],
+              "score": null
+            },
+            "iou": 0.8837852800486096
+          },
+          {
+            "prediction": {
+              "id": 751,
+              "class": "car",
+              "box_xyxy": [
+                624.75,
+                211.34,
+                748.2,
+                312.12
+              ],
+              "score": 0.9067
+            },
+            "gold": {
+              "id": 37,
+              "class": "car",
+              "box_xyxy": [
+                623.7,
+                212.88,
+                797.36,
+                311.03999999999996
+              ],
+              "score": null
+            },
+            "iou": 0.6976349196529269
+          },
+          {
+            "prediction": {
+              "id": 757,
+              "class": "person",
+              "box_xyxy": [
+                312.78,
+                267.29,
+                408.46,
+                410.55
+              ],
+              "score": 0.5987
+            },
+            "gold": {
+              "id": 42,
+              "class": "person",
+              "box_xyxy": [
+                311.02,
+                273.02,
+                406.90999999999997,
+                487.87
+              ],
+              "score": null
+            },
+            "iou": 0.6059760315879541
+          },
+          {
+            "prediction": {
+              "id": 755,
+              "class": "car",
+              "box_xyxy": [
+                18.81,
+                240.93,
+                276.76,
+                429.02
+              ],
+              "score": 0.856
+            },
+            "gold": {
+              "id": 36,
+              "class": "car",
+              "box_xyxy": [
+                17.71,
+                240.09,
+                459.81,
+                432.68
+              ],
+              "score": null
+            },
+            "iou": 0.5698322051647091
+          }
+        ],
+        "unmatched_predictions": [
+          {
+            "id": 756,
+            "class": "bus",
+            "box_xyxy": [
+              952.61,
+              136.99,
+              1023.7,
+              222.9
+            ],
+            "score": 0.6908
+          },
+          {
+            "id": 758,
+            "class": "person",
+            "box_xyxy": [
+              360.21,
+              266.96,
+              410.09,
+              408.53999999999996
+            ],
+            "score": 0.4196
+          },
+          {
+            "id": 759,
+            "class": "car",
+            "box_xyxy": [
+              203.68,
+              219.37,
+              585.34,
+              548.26
+            ],
+            "score": 0.3893
+          },
+          {
+            "id": 760,
+            "class": "truck",
+            "box_xyxy": [
+              581.29,
+              192.88,
+              650.0799999999999,
+              265.43
+            ],
+            "score": 0.3111
+          },
+          {
+            "id": 762,
+            "class": "person",
+            "box_xyxy": [
+              658.11,
+              192.21,
+              674.92,
+              227.4
+            ],
+            "score": 0.2166
+          },
+          {
+            "id": 763,
+            "class": "person",
+            "box_xyxy": [
+              385.04,
+              270.76,
+              456.36,
+              332.64
+            ],
+            "score": 0.1853
+          }
+        ],
+        "unmatched_gold": [
+          {
+            "id": 40,
+            "class": "truck",
+            "box_xyxy": [
+              953.21,
+              136.23,
+              1024.0,
+              224.58999999999997
+            ],
+            "score": null
+          }
+        ]
+      },
+      "yoloe": {
+        "tp": 3,
+        "fp": 0,
+        "fn": 0,
+        "matches": [
+          {
+            "prediction": {
+              "id": 80,
+              "class": "three_wheeler",
+              "box_xyxy": [
+                719.19,
+                188.09,
+                923.3700000000001,
+                435.6
+              ],
+              "score": 0.8627
+            },
+            "gold": {
+              "id": 34,
+              "class": "three_wheeler",
+              "box_xyxy": [
+                718.58,
+                189.57,
+                924.47,
+                437.74
+              ],
+              "score": null
+            },
+            "iou": 0.9773628470094325
+          },
+          {
+            "prediction": {
+              "id": 81,
+              "class": "three_wheeler",
+              "box_xyxy": [
+                197.36,
+                201.75,
+                583.89,
+                542.19
+              ],
+              "score": 0.7791
+            },
+            "gold": {
+              "id": 33,
+              "class": "three_wheeler",
+              "box_xyxy": [
+                201.88,
+                195.49,
+                582.39,
+                549.48
+              ],
+              "score": null
+            },
+            "iou": 0.9473085163692213
+          },
+          {
+            "prediction": {
+              "id": 82,
+              "class": "three_wheeler",
+              "box_xyxy": [
+                565.54,
+                193.08,
+                651.65,
+                263.53000000000003
+              ],
+              "score": 0.5187
+            },
+            "gold": {
+              "id": 35,
+              "class": "three_wheeler",
+              "box_xyxy": [
+                586.55,
+                193.1,
+                659.54,
+                264.58
+              ],
+              "score": null
+            },
+            "iou": 0.6844517712825312
+          }
+        ],
+        "unmatched_predictions": [],
+        "unmatched_gold": []
+      }
+    },
+    "img_036.jpg": {
+      "yolo26": {
+        "tp": 11,
+        "fp": 7,
+        "fn": 4,
+        "matches": [
+          {
+            "prediction": {
+              "id": 1652,
+              "class": "motorbike",
+              "box_xyxy": [
+                471.29,
+                327.47,
+                644.5,
+                574.9000000000001
+              ],
+              "score": 0.1155
+            },
+            "gold": {
+              "id": 43,
+              "class": "motorbike",
+              "box_xyxy": [
+                473.43,
+                326.37,
+                647.26,
+                576.0
+              ],
+              "score": null
+            },
+            "iou": 0.963689991424955
+          },
+          {
+            "prediction": {
+              "id": 1616,
+              "class": "person",
+              "box_xyxy": [
+                759.34,
+                310.22,
+                775.63,
+                359.33000000000004
+              ],
+              "score": 0.6895
+            },
+            "gold": {
+              "id": 50,
+              "class": "person",
+              "box_xyxy": [
+                758.02,
+                310.23,
+                775.72,
+                359.52000000000004
+              ],
+              "score": null
+            },
+            "iou": 0.9166201674795816
+          },
+          {
+            "prediction": {
+              "id": 1611,
+              "class": "person",
+              "box_xyxy": [
+                485.79,
+                245.88,
+                644.1600000000001,
+                557.79
+              ],
+              "score": 0.9017
+            },
+            "gold": {
+              "id": 49,
+              "class": "person",
+              "box_xyxy": [
+                490.2,
+                246.57,
+                630.68,
+                554.5
+              ],
+              "score": null
+            },
+            "iou": 0.8757180173582635
+          },
+          {
+            "prediction": {
+              "id": 1613,
+              "class": "person",
+              "box_xyxy": [
+                786.14,
+                313.52,
+                805.77,
+                357.03999999999996
+              ],
+              "score": 0.7953
+            },
+            "gold": {
+              "id": 51,
+              "class": "person",
+              "box_xyxy": [
+                786.25,
+                314.4,
+                805.11,
+                360.45
+              ],
+              "score": null
+            },
+            "iou": 0.875442489099294
+          },
+          {
+            "prediction": {
+              "id": 1612,
+              "class": "person",
+              "box_xyxy": [
+                319.74,
+                255.57,
+                420.9,
+                453.79999999999995
+              ],
+              "score": 0.8787
+            },
+            "gold": {
+              "id": 47,
+              "class": "person",
+              "box_xyxy": [
+                318.52,
+                257.22,
+                408.32,
+                453.51
+              ],
+              "score": null
+            },
+            "iou": 0.8568405190655269
+          },
+          {
+            "prediction": {
+              "id": 1615,
+              "class": "person",
+              "box_xyxy": [
+                806.87,
+                315.8,
+                821.93,
+                359.28000000000003
+              ],
+              "score": 0.744
+            },
+            "gold": {
+              "id": 52,
+              "class": "person",
+              "box_xyxy": [
+                806.03,
+                317.29,
+                821.42,
+                356.05
+              ],
+              "score": null
+            },
+            "iou": 0.8204610286903405
+          },
+          {
+            "prediction": {
+              "id": 1643,
+              "class": "person",
+              "box_xyxy": [
+                100.14,
+                280.86,
+                121.12,
+                333.61
+              ],
+              "score": 0.1786
+            },
+            "gold": {
+              "id": 59,
+              "class": "person",
+              "box_xyxy": [
+                101.17,
+                283.22,
+                118.38,
+                334.02000000000004
+              ],
+              "score": null
+            },
+            "iou": 0.7786406675602824
+          },
+          {
+            "prediction": {
+              "id": 1622,
+              "class": "motorbike",
+              "box_xyxy": [
+                964.17,
+                343.79,
+                1017.6999999999999,
+                384.14000000000004
+              ],
+              "score": 0.5736
+            },
+            "gold": {
+              "id": 45,
+              "class": "motorbike",
+              "box_xyxy": [
+                959.53,
+                329.83,
+                1017.27,
+                383.68
+              ],
+              "score": null
+            },
+            "iou": 0.6722019196302972
+          },
+          {
+            "prediction": {
+              "id": 1623,
+              "class": "bicycle",
+              "box_xyxy": [
+                763.29,
+                332.57,
+                775.73,
+                363.73
+              ],
+              "score": 0.5687
+            },
+            "gold": {
+              "id": 53,
+              "class": "bicycle",
+              "box_xyxy": [
+                758.2,
+                327.3,
+                775.3900000000001,
+                363.57
+              ],
+              "score": null
+            },
+            "iou": 0.5897690246893329
+          },
+          {
+            "prediction": {
+              "id": 1624,
+              "class": "bicycle",
+              "box_xyxy": [
+                789.5,
+                338.89,
+                803.05,
+                366.36
+              ],
+              "score": 0.5263
+            },
+            "gold": {
+              "id": 54,
+              "class": "bicycle",
+              "box_xyxy": [
+                785.92,
+                330.27,
+                803.42,
+                366.82
+              ],
+              "score": null
+            },
+            "iou": 0.581932382255226
+          },
+          {
+            "prediction": {
+              "id": 1614,
+              "class": "motorbike",
+              "box_xyxy": [
+                331.23,
+                370.79,
+                405.88,
+                481.53000000000003
+              ],
+              "score": 0.7519
+            },
+            "gold": {
+              "id": 44,
+              "class": "motorbike",
+              "box_xyxy": [
+                332.73,
+                319.79,
+                430.24,
+                480.48
+              ],
+              "score": null
+            },
+            "iou": 0.5042687692505726
+          }
+        ],
+        "unmatched_predictions": [
+          {
+            "id": 1617,
+            "class": "person",
+            "box_xyxy": [
+              372.71,
+              258.22,
+              429.13,
+              353.31000000000006
+            ],
+            "score": 0.6885
+          },
+          {
+            "id": 1618,
+            "class": "motorbike",
+            "box_xyxy": [
+              472.72,
+              415.78,
+              606.99,
+              575.78
+            ],
+            "score": 0.6587
+          },
+          {
+            "id": 1619,
+            "class": "car",
+            "box_xyxy": [
+              746.34,
+              316.71,
+              762.4300000000001,
+              330.21
+            ],
+            "score": 0.6455
+          },
+          {
+            "id": 1628,
+            "class": "bicycle",
+            "box_xyxy": [
+              808.32,
+              338.75,
+              818.4000000000001,
+              360.02
+            ],
+            "score": 0.431
+          },
+          {
+            "id": 1633,
+            "class": "motorbike",
+            "box_xyxy": [
+              17.83,
+              296.86,
+              51.15,
+              332.42
+            ],
+            "score": 0.2799
+          },
+          {
+            "id": 1639,
+            "class": "motorbike",
+            "box_xyxy": [
+              953.3,
+              335.98,
+              999.13,
+              378.59000000000003
+            ],
+            "score": 0.2209
+          },
+          {
+            "id": 1645,
+            "class": "person",
+            "box_xyxy": [
+              479.61,
+              304.15,
+              492.34000000000003,
+              324.97999999999996
+            ],
+            "score": 0.158
+          }
+        ],
+        "unmatched_gold": [
+          {
+            "id": 48,
+            "class": "person",
+            "box_xyxy": [
+              363.4,
+              258.29,
+              425.49,
+              447.45000000000005
+            ],
+            "score": null
+          },
+          {
+            "id": 55,
+            "class": "bicycle",
+            "box_xyxy": [
+              806.12,
+              331.08,
+              821.92,
+              359.71999999999997
+            ],
+            "score": null
+          },
+          {
+            "id": 58,
+            "class": "person",
+            "box_xyxy": [
+              186.52,
+              288.18,
+              198.73000000000002,
+              334.75
+            ],
+            "score": null
+          },
+          {
+            "id": 60,
+            "class": "bicycle",
+            "box_xyxy": [
+              97.48,
+              306.06,
+              117.39,
+              340.48
+            ],
+            "score": null
+          }
+        ]
+      },
+      "yoloe": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "matches": [],
+        "unmatched_predictions": [],
+        "unmatched_gold": []
+      }
+    }
+  }
+}

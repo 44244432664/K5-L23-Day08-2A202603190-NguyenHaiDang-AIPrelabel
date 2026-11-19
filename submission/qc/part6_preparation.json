@@ -1,0 +1,129 @@
+{
+  "prepared_at_utc": "2026-11-19T04:36:22.943257+00:00",
+  "release_candidate": {
+    "path": "submission/release/final_det.coco.json",
+    "sha256": "322081154c9784a1d9f990291a536182acbb408d7829c7b3c9104377111996f1",
+    "taxonomy_version": "v1.0",
+    "images": 24,
+    "objects": 655,
+    "per_class": {
+      "three_wheeler": 26,
+      "truck": 5,
+      "bicycle": 10,
+      "person": 349,
+      "motorbike": 206,
+      "car": 53,
+      "bus": 2,
+      "ignore_region": 4
+    },
+    "images_replaced_by_qc_fix": []
+  },
+  "qc_sampling": {
+    "command": "python scripts/qc_sample.py --n 5 --seed 42",
+    "seed": 42,
+    "requested_random_images": 5,
+    "max_hard_images": 3,
+    "actual_hard_images": 0,
+    "reason_no_hard_images": "No final annotation had can_review=true.",
+    "images": [
+      {
+        "image": "img_003.jpg",
+        "la_ca_kho": "no",
+        "so_doi_tuong": "27"
+      },
+      {
+        "image": "img_006.jpg",
+        "la_ca_kho": "no",
+        "so_doi_tuong": "35"
+      },
+      {
+        "image": "img_014.jpg",
+        "la_ca_kho": "no",
+        "so_doi_tuong": "22"
+      },
+      {
+        "image": "img_031.jpg",
+        "la_ca_kho": "no",
+        "so_doi_tuong": "4"
+      },
+      {
+        "image": "img_035.jpg",
+        "la_ca_kho": "no",
+        "so_doi_tuong": "35"
+      }
+    ],
+    "objects": 123
+  },
+  "manual_qc_status": "completed by OpenCode AI at explicit student request; not an independent human audit",
+  "known_context_not_a_qc_verdict": [
+    {
+      "image": "img_003.jpg",
+      "focus": "Known first-pass wrong-class trap was not scored as caught. Inspect the overlapping person/motorbike region near x=90..158, y=199..315; candidate IDs 6 and 22 are nearby. Do not treat trap score alone as a visual verdict."
+    },
+    {
+      "image": "img_006.jpg",
+      "focus": "Known loose-motorbike trap was not scored as caught; several overlapping candidate motorbike boxes (including IDs 82, 84, 105) require duplicate/geometry inspection."
+    },
+    {
+      "image": "img_014.jpg",
+      "focus": "Candidate object ID 166 is a person box 19.3 px high, below the v1.0 20 px individual-object threshold."
+    },
+    {
+      "image": "img_031.jpg",
+      "focus": "Known loose-bicycle trap was not scored as caught, but candidate ID 561 covers the full cargo bicycle rather than the trap original box. Decide fixed basket/cargo scope visually before calling it an error."
+    },
+    {
+      "image": "img_035.jpg",
+      "focus": "Inspect all objects independently; this image had a caught extra trap, but trap status does not establish overall image correctness."
+    }
+  ],
+  "calibration_status": {
+    "confirmed": [
+      "CAL-01",
+      "CAL-02",
+      "CAL-03",
+      "CAL-04"
+    ],
+    "confirmation_source": "Student chat on 2026-11-19; CAL-01 via Part 5 confirmation, CAL-02 specified by student, CAL-03/04 explicitly confirmed.",
+    "unresolved_v1_0_questions": [
+      1,
+      2,
+      4,
+      6,
+      7
+    ],
+    "observed_qc_blockers_from_unresolved_questions": 0
+  },
+  "preliminary_qc_report_command": "python scripts/qc_report.py --guideline-gap 2 --data-problem 0",
+  "preliminary_decision": "HOLD because two observed guideline categories remain unresolved and all five sample images are unchecked. If gaps are closed, the preserved 6/12 trap catch independently requires REWORK until honestly addressed.",
+  "integrity_note": "The deterministic sample includes known trap images and the QC was performed by AI at the student request. It is informed and non-independent. No Release claim is made.",
+  "completed_ai_assisted_qc_at_utc": "2026-11-19T04:56:26.542916+00:00",
+  "final_qc_report_command": "python scripts/qc_report.py --guideline-gap 0 --data-problem 0",
+  "qc_results": {
+    "review_rows": 14,
+    "error_objects": 14,
+    "sample_objects": 123,
+    "error_images": 5,
+    "sample_images": 5,
+    "types": {
+      "sai_vi_tri_kich_thuoc": 7,
+      "thua": 6,
+      "bo_sot": 1
+    },
+    "reviewer": "OpenCode AI (student-requested)",
+    "unchecked_images": 0,
+    "data_problems": 0,
+    "observed_guideline_gaps": 0
+  },
+  "final_decision": "REWORK",
+  "final_decision_reasons": [
+    "5/5 sampled images have at least one recorded error, above 2%.",
+    "Geometry errors are systematic: 7/14 recorded errors.",
+    "First-pass trap catch remains 6/12 = 50%, below 80%."
+  ],
+  "preserved_pre_ai_evidence": [
+    "submission/qc/qc_review_pre_ai.csv",
+    "submission/qc/qc_report_auto_pre_ai.md"
+  ],
+  "next_action": "Correct affected images in CVAT, export full annotations for every corrected image to submission/labels/qc_fixed.json, rebuild candidate, and run a separately preserved QC round."
+}

@@ -1,0 +1,139 @@
+{
+  "part": 5,
+  "purpose": "Three offline SAM 2.1 mask examples. Coordinates are on source images. Green points are positive, red points are negative, yellow rectangle is the box prompt.",
+  "model_choice": "SAM 2.1 base: repository-recommended balance, locally available, CUDA-compatible, and does not require gated SAM 3 access.",
+  "runs": [
+    {
+      "image": "img_013.jpg",
+      "target": "large foreground three_wheeler with visible driver",
+      "model": "sam2.1_b.pt",
+      "device": "CUDA GPU 0",
+      "positive_points": [
+        [
+          400,
+          480
+        ],
+        [
+          600,
+          110
+        ]
+      ],
+      "negative_points": [
+        [
+          720,
+          300
+        ]
+      ],
+      "box": [
+        98,
+        28,
+        901,
+        682
+      ],
+      "clicks": 3,
+      "mask_pixels": 274333,
+      "mask_percent": 39.3,
+      "polygons": 1,
+      "overlay": "submission/masks/img013_tuktuk_driver_excluded.jpg",
+      "preliminary_observation": "Vehicle body and roof are covered; the negatively prompted driver is mostly excluded. Open spaces are not uniformly filled. Student must verify the full visible boundary, rider exclusion, holes, glass, and any carried/fixed items.",
+      "overlay_size": [
+        1024,
+        682
+      ],
+      "overlay_sha256": "28649641b7a4816a425d076622db901c0abccb2a426b607c9ada9de0a4991998"
+    },
+    {
+      "image": "img_017.jpg",
+      "target": "foreground three_wheeler touching/overlapping another vehicle in view",
+      "model": "sam2.1_b.pt",
+      "device": "CUDA GPU 0",
+      "positive_points": [
+        [
+          700,
+          500
+        ],
+        [
+          650,
+          345
+        ]
+      ],
+      "negative_points": [
+        [
+          350,
+          430
+        ]
+      ],
+      "box": [
+        423,
+        324,
+        887,
+        631
+      ],
+      "clicks": 3,
+      "mask_pixels": 88672,
+      "mask_percent": 12.7,
+      "polygons": 1,
+      "overlay": "submission/masks/img017_foreground_tuktuk_separated.jpg",
+      "preliminary_observation": "The foreground vehicle is isolated from the neighboring three-wheeler at the negative point. Student must inspect touching boundaries, windows/glass, seats, wheels, holes, and spill into adjacent objects.",
+      "overlay_size": [
+        1024,
+        682
+      ],
+      "overlay_sha256": "d134b54b47bbda03a8a6faf93549b2372a652109b39388b0b5097d98714b0f7d"
+    },
+    {
+      "image": "img_004.jpg",
+      "target": "foreground right three_wheeler next to a standing person and other vehicles",
+      "model": "sam2.1_b.pt",
+      "device": "CUDA GPU 0",
+      "positive_points": [
+        [
+          700,
+          450
+        ],
+        [
+          650,
+          270
+        ]
+      ],
+      "negative_points": [
+        [
+          885,
+          350
+        ]
+      ],
+      "box": [
+        474,
+        229,
+        835,
+        597
+      ],
+      "clicks": 3,
+      "mask_pixels": 92719,
+      "mask_percent": 13.3,
+      "polygons": 1,
+      "overlay": "submission/masks/img004_tuktuk_person_excluded.jpg",
+      "preliminary_observation": "The target vehicle is covered while the negatively prompted standing person and neighboring vehicles are excluded. Student must check the windshield/glass convention, open cabin regions, small protrusions, undercarriage, and whether any visible rider exists.",
+      "overlay_size": [
+        1024,
+        682
+      ],
+      "overlay_sha256": "a9a2edd5699dc6f6906b05f4fac22d95ae449a135a6609fea671752ec03f3504"
+    }
+  ],
+  "review_status": "Automated generation complete. The student confirmed in chat that the three overlays satisfy the requested visual/contract checks. Initial observations remain disclosed as AI-generated and student-confirmed.",
+  "student_confirmation": {
+    "confirmed": true,
+    "date": "2026-11-19",
+    "scope": "All seven review checks listed by the assistant: boundary quality, fixed vehicle parts, person/rider exclusion, adjacent-object exclusion, glass/shadow/hole treatment, protruding cargo treatment, and independent three_wheeler class correctness.",
+    "source": "Student message: \"confirm\""
+  },
+  "contract_checks": [
+    "Visible mask boundary should be within about 3 px; ignore finer detail than wheel/handlebar scale.",
+    "Small holes under 5% may be filled; large holes should be excluded.",
+    "Shadows are excluded; vehicle glass is included under v1.0.",
+    "Touching objects need separate non-overlapping polygons; foreground object owns the contact boundary.",
+    "Person/rider is a separate object from the vehicle.",
+    "Cargo protrusion and glass/interior treatment are still open calibration questions in v1.0."
+  ]
+}

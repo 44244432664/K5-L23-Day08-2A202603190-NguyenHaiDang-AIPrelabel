@@ -13,9 +13,9 @@
 
 ## Kết quả tóm tắt (điền cuối bài; số lấy từ `submission/qc/*`, kèm mẫu số)
 
-- Máy: accepted / edited / deleted: <<... / ... / ... (mẫu số: ... box máy)>>; added: <<... (mẫu số: ... đối tượng)>>
-- So với gold: precision / recall của **máy** <<... / ...>>
-- Bắt bẫy: <<.../12 = ...%>>
-- Thời gian: gán tay <<... phút/ảnh>>; duyệt có pre-label <<... phút/ảnh>>
-- Lỗi QC: <<...% theo ảnh (.../...)>>, <<...% theo đối tượng (.../...)>>
-- **Quyết định:** <<Release / Hold / Rework>> — lý do một dòng: <<...>>
+- Máy: accepted / edited / deleted: 591 / 17 / 104 (mẫu số: 725 box máy sau loại vùng bẫy); added: 31 (mẫu số: 639 đối tượng sau duyệt). Có 13 box máy không ghép được nhưng nằm trong ignore_region nên không tính deleted. Nguồn: `submission/qc/review_stats.json`.
+- So với gold: precision / recall của **máy** 48/82 = 58.5% / 48/55 = 87.3% (4 ảnh gold; in-sample).
+- Bắt bẫy: 6/12 = 50.0% ở lượt đầu; dưới ngưỡng 80% (cần ≥10/12), phải rework; không sửa nhãn sau khi chấm để nâng điểm lượt đầu.
+- Thời gian: gán tay <<... phút/ảnh>>; duyệt có pre-label 74/24 = 3.08 phút/ảnh (74 phút do học viên báo là thời gian active đã ghi).
+- Lỗi QC AI-assisted: 100.0% theo ảnh (5/5), 11.4% theo đối tượng (14/123); không phải QC người độc lập.
+- **Quyết định:** Rework — 5/5 ảnh mẫu có lỗi, geometry lặp 7/14 lỗi và bắt bẫy lượt đầu chỉ 6/12.

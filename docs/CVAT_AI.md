@@ -206,6 +206,8 @@ Giới hạn của hàm mẫu: chỉ 6 lớp COCO, **không** có `three_wheeler
 
 ## 7. Model AI trong CVAT Docker (nâng cao)
 
+Các trọng số Day 08 đã tải sẵn (YOLO26n/s, YOLOE, SAM 2.1, MobileSAM) có adapter GPU riêng: xem [serverless/day08/README.md](../serverless/day08/README.md) để triển khai và dùng trong CVAT. Không chạy trên Task gold trước khi hoàn thành gán tay.
+
 Cài CVAT: mục 0. Model AI trong CVAT Docker (B1/B2) cần thêm **serverless (Nuclio)**: xem hướng dẫn chính thức
 https://docs.cvat.ai/docs/administration/advanced/installation_automatic_annotation/ (cài `nuctl`, chạy compose có `docker-compose.serverless.yml`, deploy từng model từ thư mục `serverless/`).
 Trên **Mac Apple Silicon** các image Nuclio thường là amd64 và rất chậm hoặc lỗi: dùng cách A và B3.

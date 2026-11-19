@@ -10,3 +10,6 @@ models/*
 *.onnx
 _review/
 *.ts
+personal-docs/
+serverless
+REPORT-template.md
